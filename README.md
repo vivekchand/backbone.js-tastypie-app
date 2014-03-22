@@ -15,3 +15,11 @@ url                HTTP Method  Operation
 /api/v1/books/:id  PUT          Update the book with id of :id
 /api/v1/books/:id  DELETE       Delete the book with id of :id
 ```
+
+Local Setup:
+============
+```
+pip install -r requirements.txt
+python manage.py syncdb
+python manage.py runserver
+```
