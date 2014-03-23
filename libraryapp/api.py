@@ -11,7 +11,7 @@ class KeywordsResource(ModelResource):
         authorization=Authorization()
 
 class BookResource(ModelResource):
-    keywords = fields.ToManyField(KeywordsResource, 'keywords')
+    keywords = fields.ToManyField(KeywordsResource, 'keywords', blank=True, null=True)
     class Meta:
         queryset = Book.objects.all()
         resource_name = 'books'
