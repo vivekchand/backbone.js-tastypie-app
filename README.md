@@ -23,3 +23,42 @@ pip install -r requirements.txt
 python manage.py syncdb
 python manage.py runserver
 ```
+
+App Structure:
+==============
+
+```
+.
+|-- libraryapp
+|   |-- api.py
+|   |-- __init__.py
+|   |-- models.py
+|   |-- settings.py
+|   |-- static
+|   |   |-- css
+|   |   |   `-- screen.css
+|   |   `-- js
+|   |       |-- app.js
+|   |       |-- collections
+|   |       |   `-- library.js
+|   |       |-- lib
+|   |       |   |-- backbone-min.js
+|   |       |   |-- backbone-tastypie.js
+|   |       |   |-- jquery.min.js
+|   |       |   `-- underscore-min.js
+|   |       |-- models
+|   |       |   `-- book.js
+|   |       `-- views
+|   |           |-- book.js
+|   |           `-- library.js
+|   |-- templates
+|   |   `-- index.html
+|   |-- urls.py
+|   |-- views.py
+|   `-- wsgi.py
+|-- LICENSE
+|-- manage.py
+|-- Procfile
+|-- README.md
+`-- requirements.txt
+```
