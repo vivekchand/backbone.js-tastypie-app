@@ -30,10 +30,6 @@ App Structure:
 ```
 .
 |-- libraryapp
-|   |-- api.py
-|   |-- __init__.py
-|   |-- models.py
-|   |-- settings.py
 |   |-- static
 |   |   |-- css
 |   |   |   `-- screen.css
@@ -53,6 +49,10 @@ App Structure:
 |   |           `-- library.js
 |   |-- templates
 |   |   `-- index.html
+|   |-- api.py
+|   |-- __init__.py
+|   |-- models.py
+|   |-- settings.py
 |   |-- urls.py
 |   |-- views.py
 |   `-- wsgi.py
